@@ -102,7 +102,7 @@ def update_house_csv():
     """
 
     """Set headers"""
-    headers = {"X-API-Key": "0F669pO5r7aHwKpuVlJK9qHErC8eENwCeC8LyV70"}
+    headers = {"X-API-Key": "PP_KEY"}
 
     """Generate list of house members"""
     houser = requests.get("https://api.propublica.org/congress/v1/115/house/members.json", headers=headers)
@@ -141,7 +141,7 @@ def update_senate_csv():
     """
 
     """Set headers"""
-    headers = {"X-API-Key": "0F669pO5r7aHwKpuVlJK9qHErC8eENwCeC8LyV70"}
+    headers = {"X-API-Key": "PP_KEY"}
 
     """Generate list of house members"""
     senate_response = requests.get("https://api.propublica.org/congress/v1/115/senate/members.json", headers=headers)
